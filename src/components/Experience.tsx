@@ -242,7 +242,7 @@ const CompactAbstractCard = ({ exp, index }: CardProps) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={handleMouseLeave}
         whileHover={{ y: -4, scale: 1.01 }}
-        className={`relative group rounded-2xl bg-gradient-to-br ${theme.gradient} border border-white/20 p-5 sm:p-6 shadow-[0_12px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.7)] transition-all duration-300 overflow-hidden cursor-default`}
+        className={`relative group rounded-2xl bg-gradient-to-br ${theme.gradient} border border-white/20 p-4 sm:p-6 shadow-[0_12px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.7)] transition-all duration-300 overflow-hidden cursor-default`}
       >
         {/* Ambient Glow Aura */}
         <div
@@ -257,7 +257,7 @@ const CompactAbstractCard = ({ exp, index }: CardProps) => {
         />
 
         {/* Floating KPI Metric Pill */}
-        <div className="absolute top-4 right-4 sm:top-5 sm:right-5 z-10 flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-xl border border-white/15 shadow-md group-hover:scale-105 transition-transform duration-300">
+        <div className="absolute top-3.5 right-3.5 sm:top-5 sm:right-5 z-10 flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-xl border border-white/15 shadow-md group-hover:scale-105 transition-transform duration-300">
           <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_6px_#34d399]" />
           <div className="text-right">
             <div className="text-xs sm:text-sm font-black text-white font-mono leading-none">
@@ -270,7 +270,7 @@ const CompactAbstractCard = ({ exp, index }: CardProps) => {
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-[85%] sm:max-w-[78%]">
+        <div className="relative z-10 max-w-full pr-16 sm:pr-24">
           {/* Top Bar: Role Tag & Period */}
           <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2.5">
             <span className={`text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${theme.badge}`}>

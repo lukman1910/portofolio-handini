@@ -8,9 +8,14 @@ export const CustomCursor = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check if mobile device to disable custom cursor
+    // Check if touch or mobile device to disable custom cursor
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768 || "ontouchstart" in window);
+      setIsMobile(
+        window.innerWidth <= 768 || 
+        "ontouchstart" in window || 
+        navigator.maxTouchPoints > 0 ||
+        window.matchMedia("(pointer: coarse)").matches
+      );
     };
     
     checkMobile();

@@ -52,7 +52,7 @@ const BackgroundScene = () => {
 
 export const Hero3DEnvironment = () => {
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="absolute inset-0 z-0 pointer-events-none">
       <Canvas camera={{ position: [0, 0, 10], fov: 45 }} dpr={[1, 2]}>
         <color attach="background" args={["#050505"]} />
         <fog attach="fog" args={["#050505", 10, 20]} />
